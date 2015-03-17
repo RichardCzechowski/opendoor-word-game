@@ -19,7 +19,7 @@ angular.module('opendoorApp')
   $scope.scrambled = [];
   $scope.answer = [];
   $scope.winner = "";
-  $scope.time = 10;
+  $scope.time = 120;
   $scope.player ={
     score: 0,
     name: ''
