@@ -77,6 +77,12 @@ body {
   margin-bottom: 10%;
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+.letterPanel{
+  font-size: 2em;
+}
+}
+
 .answer{
   background-color: blue;
   opacity: .9;
