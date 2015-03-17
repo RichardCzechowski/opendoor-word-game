@@ -1,7 +1,11 @@
 {
   "name": "opendoor",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.12.2",
+    "gzippo": "^0.2.0",
+    "morgan": "^1.5.2"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",
