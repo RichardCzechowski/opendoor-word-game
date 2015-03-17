@@ -32,24 +32,24 @@
     </div>
     <div class="panel-body">
       <form class="center">
-         <div class="form-group">
-           <p class="score">{{player.score}}</p>
-           <input class="form-control" ng-model="player.name" placeholder="name">
-         </div>
-         <button class="btn btn-default center" type="submit" ng-click="saveScore(player)">Submit Score</button>
-       </form>
-       <div class="btn-group" role="group">
-         <button type="button" class="btn btn-default" ng-click="reset()">Reset</button>
-       </div>
-       <div class="scores" ng-show="topscores.length">
-         <h3>Top Scores</h3>
-         <div ng-repeat="topscore in topscores">
-           <ul>
-             <li>{{topscore.name}}</li>
-             <li>{{topscore.score}}</li>
-           </ul>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+        <div class="form-group">
+          <p class="score">{{player.score}}</p>
+          <input class="form-control" ng-model="player.name" placeholder="name">
+        </div>
+        <button class="btn btn-default center" type="submit" ng-click="saveScore(player)">Submit Score</button>
+      </form>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default" ng-click="reset()">Reset</button>
+      </div>
+      <div class="scores" ng-show="topscores.length">
+        <h3>Top Scores</h3>
+        <div ng-repeat="topscore in topscores">
+          <ul>
+            <li>{{topscore.name}}</li>
+            <li>{{topscore.score}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

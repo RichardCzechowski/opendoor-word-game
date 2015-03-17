@@ -78,8 +78,8 @@ body {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
-.letterPanel{
-  font-size: 2em;
+  .letterPanel{
+    font-size: 2em;
 }
 }
 
@@ -124,7 +124,7 @@ body {
 }
 
 .center{
-text-align: center;
+  text-align: center;
 }
 
 /* animations */

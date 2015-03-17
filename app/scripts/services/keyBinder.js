@@ -7,5 +7,4 @@ angular.module('opendoorApp')
     $rootScope.$broadcast("keyPressed", key);
   }
   $document.on('keyup', keyupHandler);
-
 }]);

@@ -79,11 +79,9 @@ angular.module('opendoorApp')
     var answer = $scope.answer.join('');
     WordService.check(answer)
     .success(function(data, status, headers, config) {
-      console.log(data);
       if (data.length){
         $scope.winner = 'win';
         $scope.win();
-        console.log(data[0].text);
         $scope.word.definition = data[0].text;
       }
       else{
@@ -130,7 +128,6 @@ angular.module('opendoorApp')
         $scope.topscores.push({name: data.val().name, score: data.val().score});
       });
       $scope.$apply();
-      console.log($scope.topscores);
     });
   };
 
@@ -153,7 +150,6 @@ angular.module('opendoorApp')
   //listen for keypresses and add them to the answer array
   $scope.$on('keyPressed', function(e, value) {
     var letter = String.fromCharCode(value)
-    console.log(letter, value)
     $scope.addLetter(letter);
     $scope.$apply();
   });
